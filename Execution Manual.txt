@@ -1,0 +1,13 @@
+** Please make sure the configuration is located with jar file or program in the same directory **
+
+1. Using JAR file (Recommended)
+a) on the command line prompt go to the directory or folder containing the the jar file
+b) run this command ‘java -jar Gnutella.jar’
+- repeat a), b) to run multiple servents.
+
+2. Manual Compile
+a) go to the directory ‘../../Gnutella network/src/servent’
+b) run this command ‘javac *.java
+c) go to ‘../../Gnutella network/src/’
+d) run this command ‘java -classpath . servant.Gnutella’
+- repeat c), d) to run multiple servants.

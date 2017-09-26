@@ -1,0 +1,29 @@
+1. Main driver - (Gnutella.java)
+
+1)reads the network topology and store the network information into program so that the program can ready to participate in the file sharing network. 
+2) Make the shared directory ready.
+3) Get the neighbor numbers to connect.
+4) Finally starts the client thread and server thread at the same time.
+
+
+2. Client - (ServentClient.java)
+1) Offers interface to user.
+2) Users can select search and obtain a file or exit.
+3) Makes new query to broadcast into entire network
+4) request obtain a file to other servants.
+
+
+3. Server - (ServentServer.java)
+1) Waits connection requests from single or multiple neighbors. And make thread when connection is established.
+2) Gets messages from neighbor(s) and process with the message.
+3) Server can take 3 types of message. query(broadcast), queryhit, and download request.
+
+4. Data Structure - (MessageID.java  ServerInfo.java)
+1) ServerInfo stores information of servers (server id, server port, server ip ..)
+2) MessageId store information of messages (seq no, original requestor)
+
+5. File transfer - (FileDownloader.java FileUploader.java)
+1) transfer files between neighbors
+
+6. XML Parser
+1) gets network information from ‘configuration.xml’ so that the driver can use it.
